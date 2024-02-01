@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bukit Bintang"
+        android:textSize="39dp"
+        android:textStyle="bold"
+        android:padding="4dp"
+        android:textColor="#EEF5FF"
+        android:fontFamily="@font/ssl"/>
+
+    <GridLayout
+        android:layout_width="430dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/d1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="#9BBEC8"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:onClick="View">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/teropong" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View\nKetuk untuk melihat View di Bukit Bintang"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="150dp"/>
+
+            <!-- Your CardView content -->
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/d2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="#9BBEC8"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:onClick="Location">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/gps" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location\nKetuk untuk melihat Rute/Lokasi Bukit Bintang"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="150dp"/>
+            <!-- Your CardView content -->
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/d3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="#9BBEC8"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:onClick="Story">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/book" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Story\nKetuk untuk melihat cerita saya di Bukit Bintang"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="150dp"/>
+
+            <!-- Your CardView content -->
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/d4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="#9BBEC8"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            android:onClick="rating">
+
+            <!-- Your CardView content -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/bintang" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating\nKetuk untuk melihat rating Bukit Bintang"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="150dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>
